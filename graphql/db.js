@@ -23,6 +23,17 @@ export const getById = (id) => {
   return filteredMovies[0];
 };
 
+export const addMovie = (name, score) => {
+  const newId = movies.length > 0 ? movies[movies.length - 1].id + 1 : 1;
+  const newMovie = {
+    id: newId,
+    name,
+    score,
+  };
+  movies.push(newMovie);
+  return newMovie;
+};
+
 export const deleteMovie = (id) => {
   const cleanedMovies = movies.filter((movie) => movie.id !== id);
   if (movies.length > cleanedMovies.length) {
