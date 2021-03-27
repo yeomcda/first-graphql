@@ -1,0 +1,9 @@
+{
+  "name": "first-graphql",
+  "version": "1.0.0",
+  "description": "graphql을 이용한 영화 api",
+  "main": "index.js",
+  "repository": "https://github.com/yeomcda/first-graphql",
+  "author": "yeomc",
+  "license": "MIT"
+}
