@@ -1,6 +1,6 @@
 import { getMovies, getById, addMovie, deleteMovie } from "./db";
 
-const resovers = {
+const resolvers = {
   Query: {
     movies: () => getMovies(),
     movie: (_, { id }) => getById(id),
@@ -11,4 +11,4 @@ const resovers = {
   },
 };
 
-export default resovers;
+export default resolvers;
